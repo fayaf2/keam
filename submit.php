@@ -10,6 +10,6 @@ $data = "Name: $name\nParent Name: $ParentName\nPlace: $place\nMobile Number: $m
 file_put_contents('responses.txt', $data, FILE_APPEND);
 
 // Redirect to a specific link
-header('https://fayaf2.github.io/keam/exa.html');
+header('exa.html');
 exit;
 ?>

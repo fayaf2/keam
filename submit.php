@@ -7,7 +7,7 @@ $School = isset($_POST['School']) ? $_POST['School'] : '';
 
 // Save the responses to a text file
 $data = "Name: $name\nParent Name: $ParentName\nPlace: $place\nMobile Number: $mobile\nSchool: $School\n";
-file_put_contents('responses.txt', $data, FILE_APPEND);
+file_put_contents('https://fayaf2.github.io/keam/responses.txt', $data, FILE_APPEND);
 
 // Redirect to a specific link
 header('Location:https://fayaf2.github.io/keam/exa.html');

@@ -189,30 +189,28 @@
             <div class="col-md-9 mx-auto">
               <div class="contact-form">
 
-                <div class="controls">
-               <form id="myForm">
-  <input type="text" name="Name" placeholder="Name" class="form-control" pattern="[A-Za-z\s]+" title="Name should only contain letters." required/>
-                    <input type="text" name="ParentName"  placeholder="ParentName" class="form-control" pattern="[A-Za-z\s]+" title="Parent name should only contain letters." required />
-                    <input type="text" name="Place" placeholder="Place" class="form-control"  pattern="[A-Za-z\s]+" title="Place should only contain letters." required />
-                    <input type="tel" name="Mobile" placeholder="Mobile" class="form-control" pattern="\d{10}" title="Mobile number must be 10 digits." required/>
-                    <input type="text" name="School" placeholder="School" class="form-control" pattern="[A-Za-z\s]+" title="Place should only contain letters." required />
-                    <input type="email" name="Email" placeholder="Email" class="form-control" required />
+                <form id="myForm" method="post">
+                  <input type="text" name="Name" placeholder="Name" class="form-control" pattern="[A-Za-z\s]+" title="Name should only contain letters." required/>
+                  <input type="text" name="ParentName"  placeholder="Parent Name" class="form-control" pattern="[A-Za-z\s]+" title="Parent name should only contain letters." required />
+                  <input type="text" name="Place" placeholder="Place" class="form-control"  pattern="[A-Za-z\s]+" title="Place should only contain letters." required />
+                  <input type="tel" name="Mobile" placeholder="Mobile" class="form-control" pattern="\d{10}" title="Mobile number must be 10 digits." required/>
+                  <input type="text" name="School" placeholder="School" class="form-control" pattern="[A-Za-z\s]+" title="School should only contain letters." required />
+                  <input type="email" name="Email" placeholder="Email" class="form-control" required />
 
-                    <input type="submit" class="btn btn-default btn-block btn-custom" value="Submit">
-
-                     <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-            // Prevent the default form submission
-            event.preventDefault();
-            // Redirect to exa.html
-            window.location.href = "exa.html";
-        });
-    </script>
-                  </form>
-                </div>
-
-
+                  <input type="submit" class="btn btn-default btn-block btn-custom" value="Submit">
                 </form>
+              </div>
+
+              <script>
+                document.getElementById("myForm").addEventListener("submit", function(event) {
+                  event.preventDefault(); // Prevent the form from submitting normally
+                  // Redirect to exa.html
+                  window.location.href = "exa.html";
+                });
+              </script>
+
+
+              </form>
                 </div>
               </div>
             </div>
